@@ -21,7 +21,7 @@ function page() {
         {/* left */}
         <div className="animate-fade-in ">
           <h1 className="mb-4 font-bebasNeue text-[120px] uppercase leading-[128px] text-[#2E2E2E]">
-            Let's go! <br />
+            Let&lsquo;s go! <br />
             The
             <span className="text-[#F77A40]"> adventure </span>
             is <br />

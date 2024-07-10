@@ -94,7 +94,9 @@ const FilterSelector = ({
       <div className="flex items-center gap-6">
         <div className="flex gap-2">
           {icon}
-          <span className="gap-2 text-lg font-bold text-[#2E2E2E]">{name}</span>
+          <span className="gap-2 text-lg font-bold text-[#2E2E2E]">
+            {value}
+          </span>
         </div>
         <ArrowDown />
       </div>
