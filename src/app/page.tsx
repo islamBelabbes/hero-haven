@@ -18,7 +18,7 @@ const HEROS = [
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#252526]">
-      <div className="app px-3 py-12">
+      <div className="app mx-auto max-w-7xl px-3 py-12">
         <ul className="mt-9 grid grid-cols-1 gap-4  ">
           {HEROS.map((hero) => (
             <li key={hero.href}>

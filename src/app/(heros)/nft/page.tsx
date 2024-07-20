@@ -26,7 +26,7 @@ function page() {
           "linear-gradient(to right,rgba(16,24,40,100%),rgba(12,17,29,100%))",
       }}
     >
-      <div className="mx-auto flex max-w-7xl grow items-center">
+      <div className="app  flex grow items-center">
         {/* Left */}
         <div>
           <Image
