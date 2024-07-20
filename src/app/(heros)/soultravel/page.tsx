@@ -43,7 +43,7 @@ function page() {
               className="size-[640px] rounded-full"
               style={{
                 backgroundImage:
-                  "linear-gradient(to top,rgba(244,185,67,57%),rgba(247,122,64,100%))",
+                  "linear-gradient(to right,rgba(244,185,67,57%),rgba(247,122,64,100%))",
               }}
             />
             <Image

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Button from "../../folders/_components/button";
 
 const NAV_LINKS = [
   {
@@ -61,18 +62,8 @@ function Header() {
           <button className="font-semibold text-[#7DE226] underline decoration-2">
             Log In
           </button>
-          <button
-            className="border-solid px-6 py-2 font-semibold text-white"
-            style={{
-              background:
-                "linear-gradient(to left bottom, rgba(89, 157, 33), rgba(23, 155, 126))",
-              borderImage:
-                "linear-gradient(to left bottom, rgba(120, 255, 0), rgba(255, 255, 255))",
-              borderRadius: "8px", // Adjust the border radius value as per your design
-            }}
-          >
-            Sign Up
-          </button>
+
+          <Button>Sign Up</Button>
         </div>
       </div>
     </header>

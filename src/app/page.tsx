@@ -29,7 +29,7 @@ export default function HomePage() {
                 <Image
                   src={hero.image}
                   alt={hero.title}
-                  className="rounded-3xl"
+                  className="rounded-3xl object-cover object-top"
                   fill
                 />
               </Link>

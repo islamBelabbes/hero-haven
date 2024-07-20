@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Button from "../folders/_components/button";
 
 const FEATURES = [
   {
@@ -22,10 +23,10 @@ function page() {
       className="relative flex min-h-[calc(100vh-5rem)] overflow-hidden px-[84px]"
       style={{
         backgroundImage:
-          "linear-gradient(to top,rgba(16,24,40,100%),rgba(12,17,29,100%))",
+          "linear-gradient(to right,rgba(16,24,40,100%),rgba(12,17,29,100%))",
       }}
     >
-      <div className="app  flex grow items-center">
+      <div className="mx-auto flex max-w-7xl grow items-center">
         {/* Left */}
         <div>
           <Image
@@ -41,7 +42,7 @@ function page() {
             <span
               style={{
                 background:
-                  "linear-gradient(to top,rgba(161,246,9,100%),rgba(0,222,235,100%))",
+                  "linear-gradient(to right,rgba(137,243,44),rgba(29,173,144))",
                 backgroundClip: "text",
                 WebkitTextFillColor: "transparent",
               }}
@@ -53,7 +54,7 @@ function page() {
             <span
               style={{
                 background:
-                  "linear-gradient(to top,rgba(161,246,9,100%),rgba(0,222,235,100%))",
+                  "linear-gradient(to right,rgba(137,243,44),rgba(29,173,144))",
                 backgroundClip: "text",
                 WebkitTextFillColor: "transparent",
               }}
@@ -69,19 +70,7 @@ function page() {
           </p>
 
           <div className="relative z-10 mb-[39px] flex gap-4">
-            {" "}
-            <button
-              className="border-solid px-8 py-4 text-lg font-semibold leading-6 text-white"
-              style={{
-                background:
-                  "linear-gradient(to left bottom, rgba(89, 157, 33), rgba(23, 155, 126))",
-                borderImage:
-                  "linear-gradient(to left bottom, rgba(120, 255, 0), rgba(255, 255, 255))",
-                borderRadius: "8px", // Adjust the border radius value as per your design
-              }}
-            >
-              Sign Up
-            </button>
+            <Button className="px-8 py-4 text-lg leading-6 ">Sign Up</Button>
             <button className="px-5 py-3  font-semibold text-white underline decoration-2">
               See How It Works
             </button>
@@ -114,6 +103,8 @@ function page() {
             alt="blur"
             className="absolute right-0 top-0 z-0 h-[calc(100vh+2px)] w-[871px] -translate-y-[82px] -scale-x-100 lg:translate-x-[125px]"
           />
+
+          <CrocCard />
         </div>
       </div>
     </main>
@@ -134,6 +125,48 @@ function FeatureItem({
         {description}
       </span>
     </li>
+  );
+}
+
+function CrocCard() {
+  return (
+    <div
+      className="absolute 
+    bottom-0 right-0 flex
+    h-[166px] w-[313px] -translate-x-[81px] -translate-y-[107px] items-center overflow-hidden rounded-xl border
+    border-[#BEBEBE] bg-[rgba(8,8,23,81%)]
+    
+    "
+    >
+      <div className="px-[25px] py-[30px]">
+        <h1 className="mb-[3px] font-kronaOne text-xl leading-6 text-white">
+          Cool Croc
+        </h1>
+
+        <p className="mb-4 max-w-[153px] text-[13px] font-light leading-[18.5px] text-[#BEBEBE]">
+          majestic crocodile, capturing the raw power
+        </p>
+
+        <div className="flex items-center gap-[6px]">
+          <Button className="px-4 py-1 text-xs leading-6">Buy now</Button>
+          <div className="flex items-center">
+            <Eth />
+            <span className="text-xs font-medium leading-6 text-white">
+              {" "}
+              ETH 4.8
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <Image
+        src={"/nft/croc.png"}
+        width={1024}
+        height={1024}
+        alt="crock-card"
+        className="absolute right-0 h-[186px] w-[186px] translate-x-[48px] translate-y-[-7px] -scale-x-100"
+      />
+    </div>
   );
 }
 
@@ -197,6 +230,38 @@ function Clock() {
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+    </svg>
+  );
+}
+
+function Eth() {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M4 11.0001L12 13L20 11M4 11.0001L12 2M4 11.0001L12 9.00008M20 11L12 2M20 11L12 9.00008M12 2V9.00008M5.5 15L12.0001 22L18.5 15L12 16.5L5.5 15Z"
+        stroke="url(#paint0_linear_1_37304)"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_1_37304"
+          x1="5.5"
+          y1="2"
+          x2="17.5"
+          y2="24.5"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#86EE2C" />
+          <stop offset="1" stop-color="#2D9C61" />
+        </linearGradient>
+      </defs>
     </svg>
   );
 }
