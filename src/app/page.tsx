@@ -2,17 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 const HEROS = [
+  {
+    href: "/nft",
+    title: "nft",
+    image: "/nft/nft-figma.png",
+  },
   { href: "/folders", title: "folders", image: "/folders/folders-figma.png" },
   {
     href: "/soultravel",
     title: "soulTravel",
     image: "/soultravel/soul-travel-figma.png",
   },
-  {
-    href: "/nft",
-    title: "nft",
-    image: "/nft/nft-figma.png",
-  },
+
   {
     href: "/corrsy",
     title: "corrsy",
