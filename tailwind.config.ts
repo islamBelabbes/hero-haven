@@ -13,7 +13,6 @@ export default {
         poppins: ["var(--font-poppins)", ...fontFamily.sans],
         inter: ["var(--font-inter)", ...fontFamily.sans],
         kronaOne: ["var(--font-krona-one)", ...fontFamily.sans],
-        montserrat: ["var(--font-montserrat)", ...fontFamily.sans],
       },
       animation: {
         "fade-in": "fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both",
