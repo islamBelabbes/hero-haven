@@ -13,6 +13,11 @@ const HEROS = [
     title: "nft",
     image: "/nft/nft-figma.png",
   },
+  {
+    href: "/corrsy",
+    title: "corrsy",
+    image: "/corrsy/corrsy-figma.png",
+  },
 ];
 
 export default function HomePage() {
