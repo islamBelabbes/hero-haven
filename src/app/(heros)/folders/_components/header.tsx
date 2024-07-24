@@ -15,7 +15,7 @@ const NAV_LINKS = [
 
 function Header() {
   return (
-    <header className=" border-b border-b-[#282828] bg-[#141414]">
+    <header className="border-b border-b-[#282828] bg-[#141414]">
       <div className="app flex items-center justify-between px-[102px] py-4">
         {/* Logo */}
         <div className="relative h-[35px] w-[128px]">

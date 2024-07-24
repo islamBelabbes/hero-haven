@@ -20,7 +20,7 @@ const FEATURES = [
 function page() {
   return (
     <main
-      className="relative flex min-h-[calc(100vh-5rem)] overflow-hidden px-[84px]"
+      className="relative flex min-h-[calc(100vh-5rem)] animate-fade-in overflow-hidden px-[84px]"
       style={{
         backgroundImage:
           "linear-gradient(to right,rgba(16,24,40,100%),rgba(12,17,29,100%))",
@@ -121,7 +121,7 @@ function FeatureItem({
   return (
     <li className="flex items-center gap-2 lg:max-w-[174.67px]">
       {icon}
-      <span className="text-balance font-montserrat text-sm text-white">
+      <span className="font-montserrat text-balance text-sm text-white">
         {description}
       </span>
     </li>

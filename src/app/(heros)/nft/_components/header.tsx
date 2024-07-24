@@ -31,7 +31,7 @@ const NAV_LINKS = [
 
 function Header() {
   return (
-    <header className="relative z-20 min-h-20 border border-[#333741] bg-[#101828] px-20 py-5">
+    <header className="relative z-20 min-h-20 animate-fade-in border border-[#333741] bg-[#101828] px-20 py-5">
       <div className="app flex w-full items-center">
         <div className="flex items-center gap-10 px-5">
           <Image

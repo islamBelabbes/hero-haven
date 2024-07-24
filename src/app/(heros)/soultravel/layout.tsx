@@ -14,7 +14,7 @@ const bebas_Neue = Bebas_Neue({
   variable: "--font-bebas-neue",
 });
 
-function FoldersLayout({ children }: React.PropsWithChildren) {
+function SoulTravelLayout({ children }: React.PropsWithChildren) {
   return (
     <div
       className={`${poppins.variable} ${bebas_Neue.variable} mx-[160px] font-poppins`}
@@ -25,4 +25,4 @@ function FoldersLayout({ children }: React.PropsWithChildren) {
   );
 }
 
-export default FoldersLayout;
+export default SoulTravelLayout;
