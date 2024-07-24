@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 
 import { type Metadata } from "next";
+import TopBar from "./_components/top-bar";
 
 export const metadata: Metadata = {
   title: "Hero Haven",
@@ -13,7 +14,10 @@ export default async function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <TopBar />
+        {children}
+      </body>
     </html>
   );
 }
